@@ -38,7 +38,7 @@ jobs:
         with:
           repository: mermaid-js/mermaid-live-editor
           ref: ${{ needs.get-tag.outputs.tag }}
-      - name: Patch
+      - name: Apply patch
         run: |
           PATCH="
           try {
